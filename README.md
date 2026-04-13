@@ -4,7 +4,7 @@
 
 An intelligent security log analysis tool that automatically detects threats, maps incidents to the MITRE ATT&CK framework, and generates comprehensive security reports. This project demonstrates proficiency in security analysis, Python automation, AI integration, and incident response.
 
-## 🎯 Key Features
+##  Key Features
 
 - **Automated Threat Detection**: Parses Windows Event Logs and identifies suspicious activities
 - **MITRE ATT&CK Mapping**: Automatically maps detected threats to MITRE ATT&CK techniques
@@ -14,7 +14,7 @@ An intelligent security log analysis tool that automatically detects threats, ma
 - **Email Alerts**: Sends automated notifications for critical security incidents
 - **Cyber Kill Chain Integration**: Maps incidents to attack lifecycle phases
 
-## 🔧 Technologies Used
+##  Technologies Used
 
 - **Python 3.x**
 - **Claude AI API** (Anthropic)
@@ -23,7 +23,7 @@ An intelligent security log analysis tool that automatically detects threats, ma
 - **HTML/CSS** for reporting
 - **SMTP** for email notifications
 
-## 📋 Detected Threat Types
+##  Detected Threat Types
 
 | Threat Type | MITRE Technique | Event ID | Severity |
 |------------|-----------------|----------|----------|
@@ -36,7 +36,7 @@ An intelligent security log analysis tool that automatically detects threats, ma
 | Scheduled Task | T1053 | 4698 | MEDIUM |
 | Registry Modification | T1112 | 4657 | MEDIUM |
 
-## 🚀 Installation
+##  Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -65,7 +65,7 @@ Or edit `log_analyzer.py` and set the `api_key` variable.
 
 **Note**: The tool works without an API key using rule-based analysis.
 
-## 📖 Usage
+##  Usage
 
 ### Basic Usage
 
@@ -110,7 +110,7 @@ critical_incidents = [i for i in incidents if i['severity'] in ['CRITICAL', 'HIG
 alerter.send_alert("security-team@company.com", critical_incidents)
 ```
 
-## 📊 Output Examples
+##  Output Examples
 
 ### Terminal Output
 ```
@@ -205,35 +205,35 @@ The HTML report includes:
 - Creates HTML for human review
 - Triggers email alerts for critical events
 
-## 🎓 Technical Skills Demonstrated
+##  Technical Skills Demonstrated
 
 ### Security Knowledge
-- ✅ Windows Event Log analysis
-- ✅ MITRE ATT&CK framework
-- ✅ Cyber Kill Chain concepts
-- ✅ Incident classification
-- ✅ Threat detection methodologies
+-  Windows Event Log analysis
+-  MITRE ATT&CK framework
+-  Cyber Kill Chain concepts
+-  Incident classification
+-  Threat detection methodologies
 
 ### Programming & Automation
-- ✅ Python scripting
-- ✅ API integration (Claude AI)
-- ✅ Regular expressions for log parsing
-- ✅ JSON data handling
-- ✅ HTML report generation
+-  Python scripting
+-  API integration (Claude AI)
+-  Regular expressions for log parsing
+-  JSON data handling
+-  HTML report generation
 
 ### Cloud & AI Concepts
-- ✅ API usage and authentication
-- ✅ LLM integration
-- ✅ RESTful API calls
-- ✅ Error handling and fallbacks
+-  API usage and authentication
+-  LLM integration
+-  RESTful API calls
+-  Error handling and fallbacks
 
 ### Security Operations
-- ✅ Automated alerting
-- ✅ Incident response workflows
-- ✅ Security reporting
-- ✅ SIEM-like functionality
+-  Automated alerting
+-  Incident response workflows
+-  Security reporting
+-  SIEM-like functionality
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 security_log_analyzer/
@@ -246,7 +246,7 @@ security_log_analyzer/
 └── security_report.html         # Generated HTML report
 ```
 
-## 🔒 Security Best Practices
+##  Security Best Practices
 
 - Never commit API keys to version control
 - Use environment variables for sensitive data
@@ -255,7 +255,7 @@ security_log_analyzer/
 - Use encrypted connections (SMTP TLS)
 - Implement proper error handling
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - [ ] Real-time log monitoring
 - [ ] Integration with SIEM platforms
@@ -266,7 +266,7 @@ security_log_analyzer/
 - [ ] Automated response actions
 - [ ] Multi-tenant support
 
-## 📞 Use Cases
+##  Use Cases
 
 1. **Security Monitoring**: Continuous analysis of Windows security logs
 2. **Incident Response**: Quick identification of security incidents
@@ -274,7 +274,7 @@ security_log_analyzer/
 4. **Threat Hunting**: Proactive search for indicators of compromise
 5. **Training**: Educational tool for learning security analysis
 
-## 🎯 Interview Talking Points
+##  Interview Talking Points
 
 When discussing this project in your Netenrich interview:
 
@@ -298,21 +298,18 @@ When discussing this project in your Netenrich interview:
    - Modular design for easy extension
    - API-based for cloud deployment
 
-## 📚 Learning Resources
+##  Learning Resources
 
 - [MITRE ATT&CK Framework](https://attack.mitre.org/)
 - [Windows Security Event IDs](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/)
 - [Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
 - [Python Security Tools](https://pypi.org/search/?q=security)
 
-## 📝 License
 
-This project is for educational and portfolio purposes.
 
-## 👤 Author
 
 Created as a portfolio project demonstrating security analysis and automation skills.
 
----
+
 
 **Note**: This is a demonstration project. For production use, additional features like input validation, comprehensive error handling, logging, and security hardening would be required.
