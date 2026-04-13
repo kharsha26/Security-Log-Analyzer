@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Security Incident Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .summary-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .severity-bar-fill {
+            height: 30px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            color: white;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .CRITICAL { background-color: #e74c3c; }
+        .HIGH { background-color: #e67e22; }
+        .MEDIUM { background-color: #f39c12; }
+        .INFO { background-color: #95a5a6; }
+        .incident {
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🛡️ Security Incident Analysis Report</h1>
+
+        <div class="summary">
+            <div class="summary-card">
+                <h3>Total Events</h3>
+                <p>15</p>
+            </div>
+            <div class="summary-card">
+                <h3>Suspicious Events</h3>
+                <p>14</p>
+            </div>
+        </div>
+
+        <div class="severity-bar-fill CRITICAL">
+            CRITICAL: 4
+        </div>
+
+        <div class="severity-bar-fill HIGH">
+            HIGH: 5
+        </div>
+
+        <div class="severity-bar-fill MEDIUM">
+            MEDIUM: 5
+        </div>
+
+        <div class="severity-bar-fill INFO">
+            INFO: 1
+        </div>
+<h2>Incident Details</h2>
+        <div class="incident">
+            <strong>#1 privilege_escalation</strong><br>
+            Severity: CRITICAL<br>
+            MITRE: T1078 - Valid Accounts<br>
+            User: dbadmin<br>
+            Event ID: 4672<br>
+            Details: Special privileges assigned to new logon
+        </div>
+
+        <div class="incident">
+            <strong>#2 lateral_movement</strong><br>
+            Severity: CRITICAL<br>
+            MITRE: T1021 - Remote Services<br>
+            User: user01<br>
+            Event ID: 4648<br>
+            Details: Logon attempt with explicit credentials
+        </div>
+
+        <div class="incident">
+            <strong>#3 data_exfiltration</strong><br>
+            Severity: CRITICAL<br>
+            MITRE: T1048 - Exfiltration Over Alternative Protocol<br>
+            User: contractor01<br>
+            Event ID: 5140<br>
+            Details: Network share accessed
+        </div>
+
+        <div class="incident">
+            <strong>#4 privilege_escalation</strong><br>
+            Severity: CRITICAL<br>
+            MITRE: T1078 - Valid Accounts<br>
+            User: SYSTEM<br>
+            Event ID: 4672<br>
+            Details: Special privileges assigned to new logon
+        </div>
+
+        <div class="incident">
+            <strong>#5 failed_login</strong><br>
+            Severity: HIGH<br>
+            MITRE: T1110 - Brute Force<br>
+            User: DESKTOP-PC$<br>
+            Event ID: 4625<br>
+            Details: Failed login attempt detected
+        </div>
+
+        <div class="incident">
+            <strong>#6 failed_login</strong><br>
+            Severity: HIGH<br>
+            MITRE: T1110 - Brute Force<br>
+            User: Administrator<br>
+            Event ID: 4625<br>
+            Details: Failed login attempt detected
+        </div>
+
+        <div class="incident">
+            <strong>#7 failed_login</strong><br>
+            Severity: HIGH<br>
+            MITRE: T1110 - Brute Force<br>
+            User: Administrator<br>
+            Event ID: 4625<br>
+            Details: Failed login attempt detected
+        </div>
+
+        <div class="incident">
+            <strong>#8 new_user_created</strong><br>
+            Severity: HIGH<br>
+            MITRE: T1136 - Create Account<br>
+            User: account was created.<br>
+            Event ID: 4720<br>
+            Details: New user account created
+        </div>
+
+        <div class="incident">
+            <strong>#9 failed_login</strong><br>
+            Severity: HIGH<br>
+            MITRE: T1110 - Brute Force<br>
+            User: sa<br>
+            Event ID: 4625<br>
+            Details: Failed login attempt detected
+        </div>
+
+        <div class="incident">
+            <strong>#10 suspicious_process</strong><br>
+            Severity: MEDIUM<br>
+            MITRE: T1059 - Command and Scripting Interpreter<br>
+            User: user01<br>
+            Event ID: 4688<br>
+            Details: New process created
+        </div>
+
+        <div class="incident">
+            <strong>#11 scheduled_task</strong><br>
+            Severity: MEDIUM<br>
+            MITRE: T1053 - Scheduled Task/Job<br>
+            User: system_admin<br>
+            Event ID: 4698<br>
+            Details: Scheduled task created
+        </div>
+
+        <div class="incident">
+            <strong>#12 registry_modification</strong><br>
+            Severity: MEDIUM<br>
+            MITRE: T1112 - Modify Registry<br>
+            User: user02<br>
+            Event ID: 4657<br>
+            Details: Registry value modified
+        </div>
+
+        <div class="incident">
+            <strong>#13 suspicious_process</strong><br>
+            Severity: MEDIUM<br>
+            MITRE: T1059 - Command and Scripting Interpreter<br>
+            User: backdoor P@ssw0rd! /add && net localgroup administrators backdoor /add<br>
+            Event ID: 4688<br>
+            Details: New process created
+        </div>
+
+        <div class="incident">
+            <strong>#14 suspicious_process</strong><br>
+            Severity: MEDIUM<br>
+            MITRE: T1059 - Command and Scripting Interpreter<br>
+            User: compromised_user<br>
+            Event ID: 4688<br>
+            Details: New process created
+        </div>
+
+    </div>
+</body>
+</html>

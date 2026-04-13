@@ -1,0 +1,168 @@
+{
+  "scan_time": "2026-04-13 19:02:38",
+  "total_events": 15,
+  "suspicious_events": 14,
+  "severity_breakdown": {
+    "CRITICAL": 4,
+    "HIGH": 5,
+    "MEDIUM": 5,
+    "LOW": 0,
+    "INFO": 1
+  },
+  "incidents": [
+    {
+      "timestamp": "Unknown",
+      "event_id": "4672",
+      "user": "dbadmin",
+      "ip_address": "N/A",
+      "incident_type": "privilege_escalation",
+      "mitre_technique": "T1078 - Valid Accounts",
+      "severity": "CRITICAL",
+      "explanation": "Special privileges assigned to new logon",
+      "description": "Special privileges assigned to new logon."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4648",
+      "user": "user01",
+      "ip_address": "N/A",
+      "incident_type": "lateral_movement",
+      "mitre_technique": "T1021 - Remote Services",
+      "severity": "CRITICAL",
+      "explanation": "Logon attempt with explicit credentials",
+      "description": "A logon was attempted using explicit credentials."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "5140",
+      "user": "contractor01",
+      "ip_address": "N/A",
+      "incident_type": "data_exfiltration",
+      "mitre_technique": "T1048 - Exfiltration Over Alternative Protocol",
+      "severity": "CRITICAL",
+      "explanation": "Network share accessed",
+      "description": "A network share object was accessed."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4672",
+      "user": "SYSTEM",
+      "ip_address": "N/A",
+      "incident_type": "privilege_escalation",
+      "mitre_technique": "T1078 - Valid Accounts",
+      "severity": "CRITICAL",
+      "explanation": "Special privileges assigned to new logon",
+      "description": "Special privileges assigned to new logon."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4625",
+      "user": "DESKTOP-PC$",
+      "ip_address": "N/A",
+      "incident_type": "failed_login",
+      "mitre_technique": "T1110 - Brute Force",
+      "severity": "HIGH",
+      "explanation": "Failed login attempt detected",
+      "description": "An account failed to log on."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4625",
+      "user": "Administrator",
+      "ip_address": "N/A",
+      "incident_type": "failed_login",
+      "mitre_technique": "T1110 - Brute Force",
+      "severity": "HIGH",
+      "explanation": "Failed login attempt detected",
+      "description": "An account failed to log on."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4625",
+      "user": "Administrator",
+      "ip_address": "N/A",
+      "incident_type": "failed_login",
+      "mitre_technique": "T1110 - Brute Force",
+      "severity": "HIGH",
+      "explanation": "Failed login attempt detected",
+      "description": "An account failed to log on."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4720",
+      "user": "account was created.",
+      "ip_address": "N/A",
+      "incident_type": "new_user_created",
+      "mitre_technique": "T1136 - Create Account",
+      "severity": "HIGH",
+      "explanation": "New user account created",
+      "description": "A user account was created."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4625",
+      "user": "sa",
+      "ip_address": "N/A",
+      "incident_type": "failed_login",
+      "mitre_technique": "T1110 - Brute Force",
+      "severity": "HIGH",
+      "explanation": "Failed login attempt detected",
+      "description": "An account failed to log on."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4688",
+      "user": "user01",
+      "ip_address": "N/A",
+      "incident_type": "suspicious_process",
+      "mitre_technique": "T1059 - Command and Scripting Interpreter",
+      "severity": "MEDIUM",
+      "explanation": "New process created",
+      "description": "A new process has been created."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4698",
+      "user": "system_admin",
+      "ip_address": "N/A",
+      "incident_type": "scheduled_task",
+      "mitre_technique": "T1053 - Scheduled Task/Job",
+      "severity": "MEDIUM",
+      "explanation": "Scheduled task created",
+      "description": "A scheduled task was created."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4657",
+      "user": "user02",
+      "ip_address": "N/A",
+      "incident_type": "registry_modification",
+      "mitre_technique": "T1112 - Modify Registry",
+      "severity": "MEDIUM",
+      "explanation": "Registry value modified",
+      "description": "A registry value was modified."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4688",
+      "user": "backdoor P@ssw0rd! /add && net localgroup administrators backdoor /add",
+      "ip_address": "N/A",
+      "incident_type": "suspicious_process",
+      "mitre_technique": "T1059 - Command and Scripting Interpreter",
+      "severity": "MEDIUM",
+      "explanation": "New process created",
+      "description": "A new process has been created."
+    },
+    {
+      "timestamp": "Unknown",
+      "event_id": "4688",
+      "user": "compromised_user",
+      "ip_address": "N/A",
+      "incident_type": "suspicious_process",
+      "mitre_technique": "T1059 - Command and Scripting Interpreter",
+      "severity": "MEDIUM",
+      "explanation": "New process created",
+      "description": "A new process has been created."
+    }
+  ]
+}
