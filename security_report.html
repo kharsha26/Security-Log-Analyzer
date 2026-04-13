@@ -93,6 +93,7 @@
             <strong>#1 privilege_escalation</strong><br>
             Severity: CRITICAL<br>
             MITRE: T1078 - Valid Accounts<br>
+            Kill Chain: Exploitation<br>
             User: dbadmin<br>
             Event ID: 4672<br>
             Details: Special privileges assigned to new logon
@@ -102,6 +103,7 @@
             <strong>#2 lateral_movement</strong><br>
             Severity: CRITICAL<br>
             MITRE: T1021 - Remote Services<br>
+            Kill Chain: Lateral Movement<br>
             User: user01<br>
             Event ID: 4648<br>
             Details: Logon attempt with explicit credentials
@@ -111,6 +113,7 @@
             <strong>#3 data_exfiltration</strong><br>
             Severity: CRITICAL<br>
             MITRE: T1048 - Exfiltration Over Alternative Protocol<br>
+            Kill Chain: Actions on Objectives<br>
             User: contractor01<br>
             Event ID: 5140<br>
             Details: Network share accessed
@@ -120,6 +123,7 @@
             <strong>#4 privilege_escalation</strong><br>
             Severity: CRITICAL<br>
             MITRE: T1078 - Valid Accounts<br>
+            Kill Chain: Exploitation<br>
             User: SYSTEM<br>
             Event ID: 4672<br>
             Details: Special privileges assigned to new logon
@@ -129,6 +133,7 @@
             <strong>#5 failed_login</strong><br>
             Severity: HIGH<br>
             MITRE: T1110 - Brute Force<br>
+            Kill Chain: Reconnaissance<br>
             User: DESKTOP-PC$<br>
             Event ID: 4625<br>
             Details: Failed login attempt detected
@@ -138,6 +143,7 @@
             <strong>#6 failed_login</strong><br>
             Severity: HIGH<br>
             MITRE: T1110 - Brute Force<br>
+            Kill Chain: Reconnaissance<br>
             User: Administrator<br>
             Event ID: 4625<br>
             Details: Failed login attempt detected
@@ -147,6 +153,7 @@
             <strong>#7 failed_login</strong><br>
             Severity: HIGH<br>
             MITRE: T1110 - Brute Force<br>
+            Kill Chain: Reconnaissance<br>
             User: Administrator<br>
             Event ID: 4625<br>
             Details: Failed login attempt detected
@@ -156,6 +163,7 @@
             <strong>#8 new_user_created</strong><br>
             Severity: HIGH<br>
             MITRE: T1136 - Create Account<br>
+            Kill Chain: Installation<br>
             User: account was created.<br>
             Event ID: 4720<br>
             Details: New user account created
@@ -165,6 +173,7 @@
             <strong>#9 failed_login</strong><br>
             Severity: HIGH<br>
             MITRE: T1110 - Brute Force<br>
+            Kill Chain: Reconnaissance<br>
             User: sa<br>
             Event ID: 4625<br>
             Details: Failed login attempt detected
@@ -174,6 +183,7 @@
             <strong>#10 suspicious_process</strong><br>
             Severity: MEDIUM<br>
             MITRE: T1059 - Command and Scripting Interpreter<br>
+            Kill Chain: Execution<br>
             User: user01<br>
             Event ID: 4688<br>
             Details: New process created
@@ -183,6 +193,7 @@
             <strong>#11 scheduled_task</strong><br>
             Severity: MEDIUM<br>
             MITRE: T1053 - Scheduled Task/Job<br>
+            Kill Chain: Persistence<br>
             User: system_admin<br>
             Event ID: 4698<br>
             Details: Scheduled task created
@@ -192,6 +203,7 @@
             <strong>#12 registry_modification</strong><br>
             Severity: MEDIUM<br>
             MITRE: T1112 - Modify Registry<br>
+            Kill Chain: Installation<br>
             User: user02<br>
             Event ID: 4657<br>
             Details: Registry value modified
@@ -201,6 +213,7 @@
             <strong>#13 suspicious_process</strong><br>
             Severity: MEDIUM<br>
             MITRE: T1059 - Command and Scripting Interpreter<br>
+            Kill Chain: Execution<br>
             User: backdoor P@ssw0rd! /add && net localgroup administrators backdoor /add<br>
             Event ID: 4688<br>
             Details: New process created
@@ -210,6 +223,7 @@
             <strong>#14 suspicious_process</strong><br>
             Severity: MEDIUM<br>
             MITRE: T1059 - Command and Scripting Interpreter<br>
+            Kill Chain: Execution<br>
             User: compromised_user<br>
             Event ID: 4688<br>
             Details: New process created
