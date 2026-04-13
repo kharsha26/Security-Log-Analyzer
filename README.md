@@ -12,7 +12,6 @@ An intelligent security log analysis tool that automatically detects threats, ma
 - **Severity Scoring**: Categorizes incidents as CRITICAL, HIGH, MEDIUM, LOW, or INFO
 - **Multi-Format Reports**: Generates JSON and HTML security reports
 - **Email Alerts**: Sends automated notifications for critical security incidents
-- **Cyber Kill Chain Integration**: Maps incidents to attack lifecycle phases
 
 ##  Technologies Used
 
